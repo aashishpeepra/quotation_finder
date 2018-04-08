@@ -7,7 +7,7 @@ Created on Sun Apr  1 22:07:06 2018
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-##----------------------------------------------------- /html/body/div[7]/div[1]/div[1]/div[2]/div/div[1]
+##----------------------------------------------------- 
 print("QUOTATION ---------------BY AASHISH")
 input("PRESS ANY KEY TO CONTINUE")
 driver=webdriver.Chrome()
@@ -22,6 +22,7 @@ def type_checker(s):
         print("INVALID INPUT-- TRY INTEGERS")
         type_checker(s)
 ##-------------------------------------------------------------------------
+##this shows the attributes !! WARNING: FEW LINKS DOESN;T WORK !!
 def show_case():
     try:
         row1=driver.find_element_by_xpath('/html/body/div[7]/div[1]/div[1]/div[2]/div/div[1]')
@@ -48,6 +49,7 @@ def quote_inrange(i):  ## prints quoatation
         print("LIMIT REACHED")
     print("-----------------------------------------------")
 ##----------------------------------------------------------------------------
+## actual execution works here
 def quote_time(i):
     choice=0
     while choice!=3:
